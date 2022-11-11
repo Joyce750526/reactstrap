@@ -108,4 +108,4 @@ function Alert(props) {
 Alert.propTypes = propTypes;
 Alert.defaultProps = defaultProps;
 
-export default Alert;
+export default React.forwardRef((props, ref) => <Alert innerRef={ref} {...props} />);

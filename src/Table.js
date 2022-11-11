@@ -89,4 +89,4 @@ function Table(props) {
 Table.propTypes = propTypes;
 Table.defaultProps = defaultProps;
 
-export default Table;
+export default React.forwardRef((props, ref) => <Table innerRef={ref} {...props} />);
